@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Delete";
+}
+@model SlideItem
+<div>
+    <h2>@Model.Title</h2>
+    <p>@Model.Description</p>
+    <p>@Model.SubTitle</p>
+</div>
+
+<div >
+    <form method="post">
+        <img src="~/assets/img/slider/@Model.Photo" height="100" />
+        <a class="btn btn-primary" asp-action="Index">Go  back</a>
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    
+</div>
+
+
+
